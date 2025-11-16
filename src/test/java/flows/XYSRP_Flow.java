@@ -65,16 +65,7 @@ public class XYSRP_Flow {
 	        }
 	        
 	        for (Database data : limitedDatabaseList) {
-	            if ("CAI".equals(data.To)) {
-	                data.To = "EG1";
-	            } else if ("CAI".equals(data.From)) {
-	                data.From = "EG1";
-	            }
-	            if ("DXB".equals(data.To)) {
-	                data.To = "AE1";
-	            } else if ("DXB".equals(data.From)) {
-	                data.From = "AE1";
-	            }
+	            
 				try {
 					Date depDate = new SimpleDateFormat("dd MMM yyyy").parse(data.DepartureDate);
 					SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
