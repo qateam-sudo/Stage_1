@@ -153,6 +153,11 @@ public class Flynas extends XYSRP_Flow {
 	                String day = String.format("%02d", dayInt);
 	                String monthAbbreviation = dateParts[2];
 	                String Year = "2025";
+                    if (monthAbbreviation.equals("Nov") || monthAbbreviation.equals("Dec")) {
+                    	Year = "2025";
+                    } else {
+                    	Year = "2026";
+                    }
 	                Depdate = String.format("%s %s %s", day, monthAbbreviation, Year);
 
 	                System.out.println("SRP Date: " + Depdate);
