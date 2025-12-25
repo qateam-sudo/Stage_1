@@ -71,7 +71,7 @@ public class XYSRP_Flow {
 					SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 					String strDate = formatter.format(depDate);
 					System.out.println("strDate :" + strDate);
-					FlynasURL = "https://booking.flynas.com/#/booking/search-redirect?origin=" + data.From+ "&destination=" + data.To + "&currency=SAR&departureDate=" + strDate+ "&flightMode=oneway&adultCount=1&childCount=0&infantCount=0";
+					FlynasURL = "https://booking.flynas.com/#/booking/search-redirect?origin=" + data.From+ "&destination=" + data.To + "&currency=SAR&departureDate=" + strDate+ "&flightMode=oneway&adultCount=1&childCount=0&infantCount=0&promoCode=&culture=en-US&reference=WEGO&utm_source=wego&utm_medium=cpa&utm_campaign=core_meta";
 					System.out.println("API URL " + FlynasURL);
 					PnrDetails = data;
 					FirefoxOptions options = new FirefoxOptions();
